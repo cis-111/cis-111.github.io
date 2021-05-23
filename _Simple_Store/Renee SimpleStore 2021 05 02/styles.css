@@ -1,0 +1,68 @@
+/* Stylesheet
+*/
+
+body{
+	background-color: rosybrown;
+}
+
+h1, h2, h3 {
+	text-shadow: 2px 2px 8px orange;
+	text-align: center;
+}
+
+h2 {
+	font-size: 2.2em;
+}
+
+table {
+	background-color: bisque;
+	margin: 1em;
+	padding: 1em;
+	border: 5px solid gray;
+	border-radius: 6;
+	text-align: left;
+	box-shadow: 11px 11px 8px pink;
+	border-collapse: separate;
+}
+
+tr {
+	border-top: 2px gray;
+	padding: 1em;
+}
+
+td {
+	border-top: thin solid; 
+	padding: .5em;
+	text-shadow: 3px 3px 8px sandybrown;
+}
+
+#price {
+	text-align: right;
+}
+
+/* Two column layout, definition from W3C */
+.column {
+  float: left;
+	padding: 20px;
+	margin: 20px;
+	background-color: beige;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+caption {
+	color: firebrick;
+	font-size: 1.5em;
+	font-family: sans-serif;
+	text-shadow: 2px 2px 8px orange;
+}
+
+
+div #itemorder {
+	text-align: center;
+}
+

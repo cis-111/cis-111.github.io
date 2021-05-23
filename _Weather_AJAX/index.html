@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Weather AJAX Practice, by Renee</title>
+		<meta author="Renee Hollomon">
+		<link href="styles.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	
+	<body>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				
+				<nav class="topnav" id="myTopnav">
+					<a href="/index.html" class="active">HOME</a>
+					<a href="/_Simple_Store/index.html">STORE</a>
+					<a href="/_API_Quote/index.html">QUOTES</a>
+					<a href="/_Temp_Convert/index.html">&deg;F / &deg;C</a>
+					<a href="/_Weather_AJAX/index.html">WEATHER</a>
+					<a href="/_Holiday_AJAX/index.html">HOLIDAYS</a>
+					<a href="/_Number_Fact_AJAX/index.html">NUMBER FUN</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
+				</nav>
+			
+		<div>
+			<div id="input">
+				<h1>Weather AJAX Practice, by&nbsp;Renee</h1>
+				<p>Enter zipcode to receive current weather info for that location.</p>
+				<input type="number" id="zipcode" step=1 placeholder="Enter zipcode...">
+				<button id="weatherCurrent">Get Current Weather</button>
+			</div>
+			<div id="weather">
+				<h2 id="cityName">Current Weather</h2>
+				<p id="weatherInfo">The weather is...</p>
+			</div>
+			<div id="rationale">
+				<h3>Rationale for writing this code.</h3>
+				<div>Extended from 'Number Factoid' code.</div>
+				<div>Retrieve a JSON string via API, parse it into a JS object, and display various information from the object.</div>
+				<div>EXTRA: The temperature is rounded to an integer. Added a copyright line. Changed 'forecast' to 'current' because that's what it is.</div>
+			</div>
+		</div>
+			<script src= main.js defer></script>
+		<script src="weather.js"></script>
+	</body>
+</html>

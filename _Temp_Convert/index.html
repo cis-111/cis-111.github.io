@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+   <title>Temperature Converter</title>
+   <script src="convert.js"></script>
+   <style>
+      body {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      label {
+         display: block;
+      }
+
+      #errorMessage {
+         color: red;
+      }
+   </style>
+   
+   <body>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				
+				<nav class="topnav" id="myTopnav">
+					<a href="index.html" class="active">HOME</a>
+					<a href="/_Simple_Store/index.html">STORE</a>
+					<a href="_API_Quote/index.html">QUOTES</a>
+					<a href="_Temp_Convert/index.html">&deg;F / &deg;C</a>
+					<a href="_Weather_AJAX/index.html">WEATHER</a>
+					<a href="_Holiday_AJAX/index.html">HOLIDAYS</a>
+					<a href="_Number_Fact_AJAX/index.html">NUMBER FUN</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
+				</nav>
+			
+					 
+      <h1>Temperature Converter</h1>
+      <p>
+         <label for="cInput">Celsius:</label>
+         <input id="cInput" type="text">
+      </p>
+      <p>
+         <label for="fInput">Fahrenheit:</label>
+         <input id="fInput" type="text">
+      </p>
+      <input id="convertButton" type="button" value="Convert">
+      <div id="errorMessage">
+      </div>
+      <p>
+         <img id="weatherImage" src="warm.png" alt="Warm">
+      </p>
+			<script src= main.js defer></script>
+   </body>
+
+</html>

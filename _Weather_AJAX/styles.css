@@ -1,0 +1,40 @@
+/* WEATHER AJAX Practice, by Renee */
+
+body {background-color: mediumpurple;}
+
+h1, h2 { color: white; }
+
+div {
+	background-color: palegoldenrod;
+	border: 3px solid darkorange;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+	padding: 15px;
+	margin: 15px;
+}
+
+div #input, #weather {
+	background-color: blueviolet;
+	padding: 12px;
+	margin: 6px;
+	border: 2px solid green;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#weatherInfo {text-align: left;}
+#copyright {font-size: .4em; text-align: right;}
+
+p { 
+	color: white;
+	border: 3px solid gray;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+	border-color: lightblue;
+	padding: 10px;
+	margin: 5px
+	font-family: cursive;
+}
+

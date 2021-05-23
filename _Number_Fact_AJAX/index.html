@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- PROBLEM. NUMBER input allows exponents - cannot seem to limit it to integers. -->
+
+		<title>Weather AJAX Practice, by Renee</title>
+		<meta author="Renee Hollomon">
+		<link href="styles.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	
+	<body>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				
+				<nav class="topnav" id="myTopnav">
+					<a href="/index.html" class="active">HOME</a>
+					<a href="/_Simple_Store/index.html">STORE</a>
+					<a href="/_API_Quote/index.html">QUOTES</a>
+					<a href="/_Temp_Convert/index.html">&deg;F / &deg;C</a>
+					<a href="/_Weather_AJAX/index.html">WEATHER</a>
+					<a href="/_Holiday_AJAX/index.html">HOLIDAYS</a>
+					<a href="/_Number_Fact_AJAX/index.html">NUMBER FUN</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
+				</nav>
+			
+		<div>
+			<div id="input">
+				<h1>Number Facts AJAX Practice, by&nbsp;Renee</h1>
+				<p>Enter an integer to learn a factoid about that number.</p>
+				<input type="number" id="integer" step=1 placeholder="Enter integer...">
+			</div>
+			<div id="fact">
+				<h2>Factoid</h2>
+				<p id="factText">Number Fact</p>
+			</div>
+			<div id="rationale">
+				<h3>Rationale for writing this code.</h3>
+				<div>This code is to learn AJAX to make a simple API query and display results.  I learned to create eventListener, a response handler, and hide/display innerHTML element.</div>
+				<div>EXTRA CREDIT: Chrome (input type=number) allows exponential notation (ie 10e5) (even if step=1 is added). Solution: Implemented elegant code from STACKOVERFOW.COM !!! Woot. See .js for details.</div>
+				<div>PROBLEM: Backspace over a number until reaching null input --> causes an invisible .js error!!</div>
+			</div>
+		</div>
+			<script src= main.js defer></script>
+		<script src="numberfacts.js"></script>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+/* ZYbooks 11.4 homework 
+cInput - Text input field for C temperature
+fInput - Text input field for F temperature
+convertButton	- Button clicked to convert C/F
+errorMessag - div forerror message when convert fails
+weatherImage - Image corresponding to the temperature
+
+
+*/
+window.addEventListener("DOMContentLoaded", domLoaded);
+//window.alert("connected");
+//let temp = 7;
+//window.alert(convertFtoC(temp));
+
+function domLoaded() {
+//	console.log("DOM loaded");
+	/* Register event handler to limit input to one Id. */	
+	document.getElementById("cInput").addEventListener("input", function(){
+//		console.log("input from cInput detected");
+		// if cInput then clear fInput
+		document.getElementById("fInput").value = "";
+	});
+	document.getElementById("fInput").addEventListener("input", function(){
+//		console.log("input from fInput detected");
+		// if fInput then clear cInput
+		document.getElementById("cInput").value = "";
+	});
+
+	document.getElementById("fInput").addEventListener("input", function(){
+//		console.log("input from fInput detected");
+	});
+
+	
+	/* Register a click event handler for the Convert button (id="convertButton"). Use addEventListener(), not onclick. */	
+	document.getElementById("convertButton").addEventListener("click", function(){
+//		console.log("Convert Button clicked.");
+		let cInput = parseFloat(document.getElementById("cInput").value);
+		let fInput = parseFloat(document.getElementById("fInput").value);
+		console.log("c and f input are: " + cInput + " " + fInput);
+		// because of parseFloat() both inputs are EITHER a number or NaN.
+		if (isNaN(cInput) && isNaN(fInput)) {
+			console.log("Neither cInput nor fInput are numbers.");
+			return;
+		} else { 
+			if (cInput) {
+				console.log("cInput is a number!!!");
+				let temp = convertCtoF(cInput);
+				console.log("converting C to F... " + temp);
+				document.getElementById("fInput").value = temp;			
+				document.getElementById("cInput").value = "";			
+			// if cInput is not TRUE, then fInput MUST BE TRUE:
+			} else {
+				console.log("fInput is a number!!!!!");
+				let temp = convertFtoC(fInput);
+				console.log("converting F to C... " + temp);
+				document.getElementById("cInput").value = temp;			
+				document.getElementById("fInput").value = "";			
+			}
+		}
+	}
+);
+
+	/* FROM WORKING CODE
+	
+document.getElementById("userDate").addEventListener("click", function() { }
+	
+	*/
+	
+}
+
+function convertCtoF(degreesCelsius) {
+	console.log("CtoF entered");
+	// °F = °C * 9/5 + 32
+	return((degreesCelsius * 9 / 5) + 32);
+}
+
+function convertFtoC(degreesFahrenheit) {
+	console.log("FtoC entered");
+   // °C = (°F - 32) * 5/9
+	return((degreesFahrenheit - 32) * 5 / 9);
+}

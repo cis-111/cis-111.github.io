@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Yummy Cafe Menu - Renee Hollomon</title>
+		<link href="styles.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<h2>Yummy Cafe Orders<br>
+		by Renee Hollomon</h2>
+
+		<h3>Our Cafe offers FREE Napkins and Straws! Please order only menu items from our list: items NOT on our list will REsult in Capital T Trouble; if that happens, click New Order, and start over.</h3>
+
+		
+		<div class="row">
+			<div class="column" id="menu"></div>
+			<div class="column" id="itemorder">
+				<!-- Cannot get caption to follow styles.css 
+				<caption class="testy">CAPTION: Order Your Meal</caption>
+				-->
+				<table>
+					<tr>
+						<th><p><label>Menu item:<br>
+							<input id="itemName" type="text" value="gnarlyFries"></label></p>
+							
+							<p><label>Quantity:<br>
+								<input id="itemQuant" type="number" min="1" max="333" value="2"></label></p>
+							<p><button id="addItem" type="submit" onclick="addItem()">Order This Item</button></p>
+							<p><button id="newOrder" type="submit" onclick="newOrder()">New Order</button></p>
+						</th>
+					</tr>
+				</table>
+				
+				<table>
+					<tr>
+						<th>
+							<div>Order Total: $ <span id="totalPrice">0</span></div> 
+							<p></p>
+							<div>Order Summary:<br> 							
+							<textarea id="textareaSummary" rows=10></textarea></div>
+						</th>
+					</tr>
+				</table>
+				
+
+					
+				</div>
+		</div>
+		<hr width=50%>
+		
+<!-- 
+		<div class="row">
+			<div class="column" id="what">row/column A</div>
+			<div class="column" id="now">row/column B</div>
+		</div>
+-->
+		
+<div>
+		<h2>cool factoid area - irrelevant</h2>
+<pre>For a text area:
+
+document.getElementByID("output").value = "Hello textarea."
+
+For a div and most html elements: 
+document.getElementByID("divvie").innerHTML = "Hello div."
+</pre>
+</div>
+
+<script src=tables.js defer></script>
+
+	</body>
+</html>
+
+

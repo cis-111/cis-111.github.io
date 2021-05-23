@@ -1,0 +1,67 @@
+<!doctype html>
+<!-- TODO LIMIT DATE, HISTORIC, TO LAST YEAR -->
+<!-- LIMIT DATE, CURRENTLY HARD-WIRED TO LAST YEAR IN THE HTML. -->
+<html>
+	<head>
+		<title>Holiday AJAX, by Renee Hollomon</title>
+		<meta author="Renee Hollomon">
+		<link href="styles.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				
+				<nav class="topnav" id="myTopnav">
+					<a href="/index.html" class="active">HOME</a>
+					<a href="/_Simple_Store/index.html">STORE</a>
+					<a href="/_API_Quote/index.html">QUOTES</a>
+					<a href="/_Temp_Convert/index.html">&deg;F / &deg;C</a>
+					<a href="/_Weather_AJAX/index.html">WEATHER</a>
+					<a href="/_Holiday_AJAX/index.html">HOLIDAYS</a>
+					<a href="/_Number_Fact_AJAX/index.html">NUMBER FUN</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
+				</nav>
+		
+		<div>
+			<div><h1>Holiday AJAX, by Renee Hollomon</h1></div>
+			<div id=input>
+			<p>Enter a date, find upcoming holiday.<br>Limited to prior year (freeware api).</p>
+			<input type=date id=date min="2020-01-01" max="2020-12-31">
+			<button id="userDate">Lookup Holidays</button>
+			</div>
+			<div id=fact>
+				Weather Factoid...
+			</div>
+			<div>
+				<h2>Raison d'être</h2>
+				<p>Rationale: To get an AJAX api going in the real world: reinforcing skills learned in two walk-through AJAX practices. </p>
+				<ul><li>Learned to split() the date at the hyphen.</li>
+				<li>Accessed information from a JSON object that looked complicated.</li>
+				<li>&lt;-- Fixed &lt;li&gt; bullets: they do not play nice with &lt;div&gt; or &lt;p&gt;</li></ul>
+				<p>API selected from Github. Sadly, the free version mean-spiritedly only shows last year's info. So I limited the html input to last year.</p>
+				<ul>TODO: <li>Change calendar's min/max date, using javascript, so that this page will perpetually function.
+				<li>Handle error when no date is specified.</li>
+				</ul>
+
+			</div>
+		</div>
+			<script src= main.js defer></script>
+		<script src="javascript.js"></script>
+	</body>
+	<footer>
+		<pre>
+		<!-- include a footer file -->
+		Author: Renee Hollomon, CIS 113 Student at Skyline College 
+		Copyright: &copy Renee Hollomon 2021
+    <address>Contact: (twitter link)</address>
+		Sitemap: (tk)
+		Back To Top
+		Related Documents: <!-- Include navbar --*
+		<!-- include a footer file -->
+		</pre>
+	</footer>
+</html>
