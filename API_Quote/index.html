@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<title>Notable Quotes</title>
-	<script src="quote.js"></script>
+		<link href="../nav.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 		body {
 			font-family: Arial, Helvetica, sans-serif;
@@ -19,7 +20,7 @@
 				<nav class="topnav" id="myTopnav">
 					<a href="./index.html">HOME</a>
 					<a href="../Simple_Store/index.html">STORE</a>
-					<a href="./index.html">QUOTES</a>
+					<a href="./index.html" class="active">QUOTES</a>
 					<a href="../Temp_Convert/index.html">&deg;F / &deg;C</a>
 					<a href="../Weather_AJAX/index.html">WEATHER</a>
 					<a href="../Holiday_AJAX/index.html">HOLIDAYS</a>
@@ -54,10 +55,12 @@
 			</select>
 		</p>
 		<p>
-			<script src= main.js defer></script>
 		   <button id="fetchQuotesBtn">Fetch Quotes</button>
 		</p>
 		<div id="quotes">
 		</div>
+			<script src="nav.js" defer></script>
+	<script src="quote.js"></script>
+
 	</body>
 </html>
