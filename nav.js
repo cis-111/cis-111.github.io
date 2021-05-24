@@ -20,14 +20,14 @@
 
 
 let footsieText = '<nav style="text-align: center;">' + 
-					'<a href="/index.html">HOME</a><br>' + 
-					'<a href="/about.html">ABOUT RENEE WENDY</a><br>' + 
-					'<a href="/Simple_Store/index.html">STORE</a> &nbsp; ' + 
-					'<a href="/API_Quote/index.html">QUOTES</a>  &nbsp;' + 
-					'<a href="/Temp_Convert/index.html">&deg;F / &deg;C</a><br>' + 
-					'<a href="/Weather_AJAX/index.html">WEATHER</a> &nbsp; ' + 
-					'<a href="/Holiday_AJAX/index.html">HOLIDAYS</a> &nbsp; ' + 
-					'<a href="/Number_Fact_AJAX/index.html">NUMBER FUN</a>' + 
+					'* <a href="/index.html">Home</a> *<br>' + 
+					'* <a href="/about.html">About Renee Wendy</a> *<br>' + 
+					'* <a href="/Simple_Store/index.html">YUMMY Cafe</a>  *&nbsp; ' + 
+					'* <a href="/API_Quote/index.html">QUOTES Generator</a> *&nbsp;' + 
+					'* <a href="/Temp_Convert/index.html">Convert F&deg; to C&deg;</a> *<br>' + 
+					'* <a href="/Weather_AJAX/index.html">Weather, Currently</a>  *&nbsp; ' + 
+					'* <a href="/Holiday_AJAX/index.html">HOLIDAYS LAST YEAR</a>  *&nbsp; ' + 
+					'* <a href="/Number_Fact_AJAX/index.html">Gimme A Number FUN</a> *' + 
 					'</nav>';
 
 
