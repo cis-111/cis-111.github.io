@@ -9,6 +9,10 @@ main {}
 footer {}
 
 div.script {visibility: hidden;}
+div.simpleCenteringDiv {
+	margin-left:20%;
+	margin-right:20%; 
+}
 
 h1, h2, h3 {
 	text-shadow: 2px 2px 8px orange;
