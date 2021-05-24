@@ -41,6 +41,9 @@ td {
 	text-shadow: 3px 3px 8px sandybrown;
 }
 
+#enumerates {
+		border: 5px solid gray;
+}
 /* Two column layout, definition from W3C */
 .column {
   float: left;
