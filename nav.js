@@ -20,7 +20,8 @@
 
 
 let footsieText = '<nav style="text-align: center;">' + 
-					'<a href="/index.html" class="active">HOME</a><br>' + 
+					'<a href="/index.html">HOME</a><br>' + 
+					'<a href="/about.html">ABOUT RENEE WENDY</a><br>' + 
 					'<a href="/Simple_Store/index.html">STORE</a> &nbsp; ' + 
 					'<a href="/API_Quote/index.html">QUOTES</a>  &nbsp;' + 
 					'<a href="/Temp_Convert/index.html">&deg;F / &deg;C</a><br>' + 
