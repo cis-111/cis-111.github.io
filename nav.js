@@ -1,6 +1,24 @@
 // Javascript for navigation bar.
 "use strict;"
 
+/* 
+
+<footer>
+		<pre>
+		<!-- include a footer file -->
+		Author: Renee Hollomon, CIS 113 Student at Skyline College 
+		Copyright: &copy Renee Hollomon 2021
+    <address>Contact: (twitter link)</address>
+		Sitemap: (tk)
+		Back To Top
+		Related Documents: <!-- Include navbar --*
+		<!-- include a footer file -->
+		</pre>
+	</footer>
+
+*/
+
+
 let footsieText = '<nav style="text-align: center;">' + 
 					'<a href="/index.html" class="active">HOME</a><br>' + 
 					'<a href="/Simple_Store/index.html">STORE</a> &nbsp; ' + 
