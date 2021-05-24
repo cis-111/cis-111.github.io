@@ -1,6 +1,6 @@
 /* Stylesheet for PORTFOLIO, adapted from Simple Store. */ 
 body{
-	background-color: rosybrown;
+	background-color: #a4e0c2;
 }
 
 div.uber {}
@@ -47,6 +47,7 @@ td {
 	padding: 20px;
 	margin: 20px;
 	background-color: beige;
+	font-size: 1.3em;
 }
 /* Clear floats after the columns */
 .row:after {
@@ -97,7 +98,7 @@ nav {
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
   text-decoration: none;
-  font-size: .7em;
+  font-size: .8em;
 }
 
 /* Change the color of links on hover */
@@ -136,6 +137,8 @@ nav {
     position: absolute;
     right: 0;
     top: 0;
+		font-size: 1.7em;
+
   }
   .topnav.responsive a {
     float: none;
@@ -144,3 +147,8 @@ nav {
   }
 }
 /* ___ END Navigation Bar _________________________________ */
+/* ___ BEGIN Flex Box _____________________________________ */
+
+/* Playing with flex-container. */
+d
+/* ___ END Flex Box _____________________________________ */
