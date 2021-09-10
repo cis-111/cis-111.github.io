@@ -1,2 +1,2 @@
 # cis-111.github.io
- cis-111 Portfolio
+ College class 'cis-111' Portfolio
